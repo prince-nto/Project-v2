@@ -1,0 +1,16 @@
+package services;
+
+import javax.ejb.LocalBean;
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
+
+
+public class TweetEJB {
+
+	@PersistenceContext
+	private EntityManager em;
+	
+	public TweetEJB() {
+		
+	}
+}

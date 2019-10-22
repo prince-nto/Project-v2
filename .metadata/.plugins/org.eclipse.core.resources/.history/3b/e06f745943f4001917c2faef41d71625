@@ -1,0 +1,15 @@
+package entities;
+
+import javax.persistence.Entity;
+import javax.print.attribute.standard.DateTimeAtCompleted;
+
+@Entity(name="twitter_tbl")
+public class TweetEntity {
+
+	@Id
+	@GeneratedValue(strategy=GeneratedType.AUTO)
+	private long tweetId;
+	private String body;
+	private DateTimeAtCompleted timestamp;
+	
+}
